@@ -58,11 +58,11 @@ const Navigation = () => {
       path: '/products',
       isParent: true,
       child: [
-        { name: 'Item 1', Path: '/products/Item-1', },
-        { name: 'Item 1', Path: '/products/Item-1', },
-        { name: 'Item 1', Path: '/products/Item-1', },
-        { name: 'Item 1', Path: '/products/Item-1', },
-        { name: 'Item 1', Path: '/products/Item-1', },
+        { name: 'Item 1', path: '/products/Item-1', },
+        { name: 'Item 2', path: '/products/Item-2', },
+        { name: 'Item 3', path: '/products/Item-3', },
+        { name: 'Item 4', path: '/products/Item-4', },
+        { name: 'Item 5', path: '/products/Item-5', },
       ]
     },
     {
@@ -83,6 +83,18 @@ const Navigation = () => {
       <nav>
         <ul>
           {
+            ITEMS.map((item) => (
+              <li><a href={item.path}>{item.name}</a>
+                {item.isParent && item.child
+                  &&
+                  <ul>
+                    {item.child.map((child) => (
+                      <li><a href={child.path}>{child.name}</a></li>
+                    ))}
+                  </ul>
+                }
+              </li>
+            ))
           }
         </ul>
       </nav>
