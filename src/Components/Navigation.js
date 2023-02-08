@@ -1,4 +1,5 @@
 import './Navigation.css';
+import logo from './assets/logo.png'
 
 
 // {ITEMS.map((item, index) => (
@@ -80,16 +81,21 @@ const Navigation = () => {
   ];
   return (
     <header>
-      <nav>
+
+      <nav className='navigation'>
+        <div className='navigation__brand-logo'>
+          <a href='/'><img src={logo} alt='Rams International Logo' className='navigation__brand-logo__img' /></a>
+        </div>
+
         <ul>
           {
-            ITEMS.map((item) => (
-              <li><a href={item.path}>{item.name}</a>
+            ITEMS.map((item, itemIndex) => (
+              <li key={itemIndex}><a href={item.path}>{item.name}</a>
                 {item.isParent && item.child
                   &&
                   <ul>
-                    {item.child.map((child) => (
-                      <li><a href={child.path}>{child.name}</a></li>
+                    {item.child.map((child, childIndex) => (
+                      <li key={childIndex}><a href={child.path}>{child.name}</a></li>
                     ))}
                   </ul>
                 }
@@ -97,6 +103,11 @@ const Navigation = () => {
             ))
           }
         </ul>
+
+        <div className='navigation__mobile-toggle-button'>
+          <div className='navigation__mobile-toggle-button__bar'>&nbsp;</div>
+        </div>
+
       </nav>
     </header>
   )
