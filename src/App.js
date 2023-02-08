@@ -1,8 +1,13 @@
+import React from 'react';
 import Navigation from './Components/Navigation'
+import Header from './Components/UI/Header'
 
 function App() {
   return (
-    <Navigation />
+    <React.Fragment>
+      <Navigation />
+      <Header header='About Us' />
+    </React.Fragment>
   );
 }
 
