@@ -1,12 +1,12 @@
 import React from 'react';
 import Navigation from './Components/Navigation'
-import Header from './Components/UI/Header'
+import Card from './Components/UI/Card'
 
 function App() {
   return (
     <React.Fragment>
       <Navigation />
-      <Header header='About Us' />
+      <Card header='Gallery' />
     </React.Fragment>
   );
 }
