@@ -1,5 +1,6 @@
 import './Navigation.css';
 import logo from './assets/logo.png'
+import { Link } from 'react-router-dom'
 
 
 // {ITEMS.map((item, index) => (
@@ -84,18 +85,18 @@ const Navigation = () => {
 
       <nav className='navigation'>
         <div className='navigation__brand-logo'>
-          <a href='/'><img src={logo} alt='Rams International Logo' className='navigation__brand-logo__img' /></a>
+          <Link to='/'><img src={logo} alt='Rams International Logo' className='navigation__brand-logo__img' /></Link>
         </div>
 
         <ul>
           {
             ITEMS.map((item, itemIndex) => (
-              <li key={itemIndex}><a href={item.path}>{item.name}</a>
+              <li key={itemIndex}><Link to={item.path}>{item.name}</Link>
                 {item.isParent && item.child
                   &&
                   <ul>
                     {item.child.map((child, childIndex) => (
-                      <li key={childIndex}><a href={child.path}>{child.name}</a></li>
+                      <li key={childIndex}><Link to={child.path}>{child.name}</Link></li>
                     ))}
                   </ul>
                 }

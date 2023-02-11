@@ -1,17 +1,15 @@
 import React from 'react';
-import Navigation from './Components/Navigation'
-import Gallery from './Components/Gallery'
-import CTA from './Components/UI/CTA'
-import Footer from './Components/UI/Footer';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import HomePage from './Components/Pages/HomePage';
+
+const router = createBrowserRouter([
+  { path: '/', element: <HomePage /> }
+]);
+
 
 function App() {
   return (
-    <React.Fragment>
-      <Navigation />
-      <Gallery header='Gallery' />
-      <CTA header='Contact Us' />
-      <Footer />
-    </React.Fragment>
+    <RouterProvider router={router} />
   );
 }
 

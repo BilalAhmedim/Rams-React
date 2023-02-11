@@ -1,5 +1,6 @@
 import './Footer.css'
 import Map from './Map'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -23,10 +24,10 @@ const Footer = () => {
           India
         </li>
         <li>
-          <a href='mailto: info@ramsintl.com'> info@ramsintl.com</a>
+          <Link to='mailto: info@ramsintl.com'> info@ramsintl.com</Link>
         </li>
         <li>
-          <a href='tel:+91 0591 2970306'>+91 - 0591 2970306</a>
+          <Link to='tel:+91 0591 2970306'>+91 - 0591 2970306</Link>
         </li>
       </ul>
 
@@ -35,19 +36,19 @@ const Footer = () => {
           <h2>Featured Products</h2>
         </li>
         <li>
-          <a href='/'>Copper Bathtubs</a>
+          <Link to='/'>Copper Bathtubs</Link>
         </li>
         <li>
-          <a href='/'>Copper Farmhouse Sinks</a>
+          <Link to='/'>Copper Farmhouse Sinks</Link>
         </li>
         <li>
-          <a href='/'>Copper Kitchen Sinks</a>
+          <Link to='/'>Copper Kitchen Sinks</Link>
         </li>
         <li>
-          <a href='/'>Copper Under-Mount Sinks</a>
+          <Link to='/'>Copper Under-Mount Sinks</Link>
         </li>
         <li>
-          <a href='/'>Copper Pipe/Tubes</a>
+          <Link to='/'>Copper Pipe/Tubes</Link>
         </li>
       </ul>
 
@@ -56,13 +57,13 @@ const Footer = () => {
           <h2>Pages</h2>
         </li>
         <li>
-          <a href='/'>Home</a>
+          <Link to='/'>Home</Link>
         </li>
         <li>
-          <a href='/about-us'>About Us</a>
+          <Link to='/about-us'>About Us</Link>
         </li>
         <li>
-          <a href='/contact-us'>Contact Us</a>
+          <Link to='/contact-us'>Contact Us</Link>
         </li>
       </ul>
 
