@@ -1,6 +1,6 @@
 import React from 'react';
-import Navigation from './../Navigation'
-import Gallery from './../Gallery'
+import Navigation from './../UI/Navigation'
+import Gallery from './../UI/Gallery'
 import CTA from './../UI/CTA'
 import Footer from './../UI/Footer';
 

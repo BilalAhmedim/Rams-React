@@ -1,6 +1,6 @@
 import React from 'react'
 import Footer from '../UI/Footer'
-import Navigation from './../Navigation'
+import Navigation from './../UI/Navigation'
 import Map from './../UI/Map'
 
 const ContactPage = () => {

@@ -1,6 +1,6 @@
 import React from "react"
 import Header from './../UI/Header'
-import Navigation from './../Navigation'
+import Navigation from './../UI/Navigation'
 import Footer from './../UI/Footer'
 
 const AboutPage = () => {
