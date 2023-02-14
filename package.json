@@ -13,7 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "postcss": "postcss src/Components/postcss/**/*.css --dir src/Components/ --watch --verbose",
+    "postcss": "postcss src/Components/postcss/**/*.css --dir src/Components/UI/ --watch --verbose",
     "modt": "npm-run-all --parallel postcss start",
     "build": "react-scripts build",
     "test": "react-scripts test",
