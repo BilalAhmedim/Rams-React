@@ -1,0 +1,55 @@
+@import "normalize.css";
+
+@font-face {
+  font-family: "IsidoraSans"; /*Can be any text*/
+  src: url("./../../fonts/OTF/IsidoraSans-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IsidoraSans"; /*Can be any text*/
+  src: url("./../../fonts/OTF/IsidoraSans-SemiBold.otf") format("opentype");
+  font-weight: semibold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IsidoraSans"; /*Can be any text*/
+  src: url("./../../fonts/OTF/IsidoraSans-Medium.otf") format("opentype");
+  font-weight: medium;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "IsidoraSans"; /*Can be any text*/
+  src: url("./../../fonts/OTF/IsidoraSans-Regular.otf") format("opentype");
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: "EduQLDBeginner"; /*Can be any text*/
+  src: url("./../../fonts/EduQLDBeginner-VariableFont_wght.ttf")
+    format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "IsidoraSans", cursive;
+}
+
+h1,
+h2,
+h3,
+h,
+h,
+h6 {
+  font-family: "EduQLDBeginner";
+}
+
+p {
+  font-size: 20px;
+  font-weight: medium;
+}
