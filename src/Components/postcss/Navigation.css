@@ -1,0 +1,67 @@
+nav {
+  background: #ccc;
+}
+
+.navigation {
+  max-height: 64px;
+  /* overflow: hidden; */
+  position: relative;
+  &__brand-logo {
+    display: inline-block;
+    overflow: hidden;
+    padding: 7px 0;
+    background: red;
+    a {
+      height: 50px;
+      display: block;
+    }
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  ul.top-level {
+    position: absolute;
+    top: 64px;
+    right: 0;
+    height: 100vh;
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: 500;
+    font-size: 16px;
+    background: var(--gold);
+    li {
+      border-top: 1px solid var(--white);
+      &:first-child {
+        border: none;
+      }
+      a {
+        display: block;
+        text-decoration: none;
+        padding: 15px 20px;
+        text-transform: uppercase;
+        overflow: hidden;
+        color: var(--white);
+      }
+    }
+    ul {
+      transform: all 300ms ease-in-out;
+      &.collapse {
+        max-height: 0;
+        visibility: hidden;
+      }
+      &.expand {
+        max-height: auto;
+        visibility: visible;
+      }
+      li {
+        list-style: none;
+        &:first-child {
+          border-top: 1px solid var(--white);
+        }
+      }
+    }
+  }
+}

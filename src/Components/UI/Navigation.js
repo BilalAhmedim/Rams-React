@@ -88,13 +88,14 @@ const Navigation = () => {
           <Link to='/'><img src={logo} alt='Rams International Logo' className='navigation__brand-logo__img' /></Link>
         </div>
 
-        <ul>
+        <ul className='top-level'>
           {
             ITEMS.map((item, itemIndex) => (
               <li key={itemIndex}><Link to={item.path}>{item.name}</Link>
                 {item.isParent && item.child
                   &&
-                  <ul>
+                  // data-nav='nested-nav' data-nav-display='hidden'
+                  <ul class="collapse">
                     {item.child.map((child, childIndex) => (
                       <li key={childIndex}><Link to={child.path}>{child.name}</Link></li>
                     ))}

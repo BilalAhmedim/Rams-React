@@ -3,28 +3,28 @@
 @font-face {
   font-family: "IsidoraSans"; /*Can be any text*/
   src: url("./../../fonts/OTF/IsidoraSans-Bold.otf") format("opentype");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "IsidoraSans"; /*Can be any text*/
   src: url("./../../fonts/OTF/IsidoraSans-SemiBold.otf") format("opentype");
-  font-weight: semibold;
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
   font-family: "IsidoraSans"; /*Can be any text*/
   src: url("./../../fonts/OTF/IsidoraSans-Medium.otf") format("opentype");
-  font-weight: medium;
+  font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "IsidoraSans"; /*Can be any text*/
   src: url("./../../fonts/OTF/IsidoraSans-Regular.otf") format("opentype");
-  font-weight: medium;
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -33,6 +33,16 @@
     format("truetype");
   font-weight: 500;
   font-style: normal;
+}
+
+/* Variables */
+
+:root {
+  --gold: #d7b356;
+  --white: #f5f5f5;
+  --lighter-black: #525252;
+  --light-black: #313131;
+  --black: #000000;
 }
 
 * {
@@ -51,5 +61,5 @@ h6 {
 
 p {
   font-size: 20px;
-  font-weight: medium;
+  font-weight: 500;
 }
