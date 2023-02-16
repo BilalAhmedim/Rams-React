@@ -91,7 +91,10 @@ const Navigation = () => {
         <ul className='top-level'>
           {
             ITEMS.map((item, itemIndex) => (
-              <li key={itemIndex}><Link to={item.path}>{item.name}</Link>
+              <li key={itemIndex}
+                data-parent-nav={item.isParent ? 'nested-nav' : null}
+
+              ><Link to={item.path}>{item.name}</Link>
                 {item.isParent && item.child
                   &&
                   // data-nav='nested-nav' data-nav-display='hidden'
