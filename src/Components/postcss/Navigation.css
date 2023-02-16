@@ -1,28 +1,28 @@
 nav {
-  background: #ccc;
+  background: #fff;
 }
 
 .navigation {
-  max-height: 64px;
+  max-height: 50px;
   /* overflow: hidden; */
   position: relative;
+  padding: 0 30px;
   &__brand-logo {
     display: inline-block;
     overflow: hidden;
-    padding: 7px 0;
-    background: red;
+    padding: 5px 0;
     a {
-      height: 50px;
+      height: 40px;
       display: block;
     }
     img {
-      width: 50px;
-      height: 50px;
+      width: 40px;
+      height: 40px;
     }
   }
   ul.top-level {
     position: absolute;
-    top: 64px;
+    top: 50px;
     right: 0;
     height: 100vh;
     float: right;
@@ -61,6 +61,45 @@ nav {
         &:first-child {
           border-top: 1px solid var(--white);
         }
+      }
+    }
+  }
+
+  &__mobile-toggle-button {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    border: 1px solid var(--gold);
+    &__bar {
+      width: 20px;
+      height: 2px;
+      position: inherit;
+      top: 8px;
+      left: 4px;
+      background: var(--gold);
+      border-radius: 2px;
+      &:after {
+        content: "";
+        position: absolute;
+        top: 5px;
+        left: 0;
+        border-radius: 2px;
+        width: 20px;
+        height: 2px;
+        background: var(--gold);
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 10px;
+        left: 0;
+        border-radius: 2px;
+        width: 20px;
+        height: 2px;
+        background: var(--gold);
       }
     }
   }
