@@ -1,22 +1,8 @@
 import './Navigation.css';
 import logo from './../assets/logo.png'
 import { Link } from 'react-router-dom'
+import { useState } from 'react';
 
-
-// {ITEMS.map((item, index) => (
-//   <li key={index}>
-//     <a href={item.path}>{item.name}</a>
-//     {item.isParent && item.child && (
-//       <ul>
-//         {item.child.map((child, childIndex) => (
-//           <li key={childIndex}>
-//             <a href={child.path}>{child.name}</a>
-//           </li>
-//         ))}
-//       </ul>
-//     )}
-//   </li>
-// ))}
 
 const Navigation = () => {
   const ITEMS = [
@@ -80,6 +66,18 @@ const Navigation = () => {
       child: null
     },
   ];
+  const [expandedItem, setExpandedItem] = useState(null);
+
+  const handelItemClick = (itemIndex) => {
+    console.log(itemIndex)
+    console.log(expandedItem)
+    if (expandedItem === itemIndex) {
+      setExpandedItem(null)
+    } else {
+      setExpandedItem(itemIndex)
+    }
+  }
+
   return (
     <header>
 
@@ -94,11 +92,11 @@ const Navigation = () => {
               <li key={itemIndex}
                 data-parent-nav={item.isParent ? 'nested-nav' : null}
 
-              ><Link to={item.path}>{item.name}</Link>
+              ><Link to={item.isParent ? null : item.path} onClick={() => { handelItemClick(itemIndex) }}>{item.name}</Link>
                 {item.isParent && item.child
                   &&
                   // data-nav='nested-nav' data-nav-display='hidden'
-                  <ul class="collapse">
+                  <ul className={expandedItem === itemIndex ? 'expanded' : 'collapse'}>
                     {item.child.map((child, childIndex) => (
                       <li key={childIndex}><Link to={child.path}>{child.name}</Link></li>
                     ))}

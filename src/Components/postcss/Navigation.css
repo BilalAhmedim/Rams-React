@@ -47,13 +47,15 @@ nav {
       }
     }
     ul {
-      transform: all 300ms ease-in-out;
+      height: auto;
+      transition: all 300ms ease-in-out;
+      overflow: hidden;
       &.collapse {
-        max-height: 0;
+        max-height: 0px;
         visibility: hidden;
       }
-      &.expand {
-        max-height: auto;
+      &.expanded {
+        max-height: 247px;
         visibility: visible;
       }
       li {
