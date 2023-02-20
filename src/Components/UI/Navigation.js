@@ -68,7 +68,7 @@ const Navigation = () => {
   ];
   const [expandedItem, setExpandedItem] = useState(null);
 
-  const handelItemClick = (itemIndex) => {
+  const navMenuHandle = (itemIndex) => {
     console.log(itemIndex)
     console.log(expandedItem)
     if (expandedItem === itemIndex) {
@@ -78,6 +78,8 @@ const Navigation = () => {
     }
   }
 
+  const navHandle = () => {
+  }
   return (
     <header>
 
@@ -85,14 +87,14 @@ const Navigation = () => {
         <div className='navigation__brand-logo'>
           <Link to='/'><img src={logo} alt='Rams International Logo' className='navigation__brand-logo__img' /></Link>
         </div>
-
+        <div className='nav-model active'></div>
         <ul className='top-level'>
           {
             ITEMS.map((item, itemIndex) => (
               <li key={itemIndex}
                 data-parent-nav={item.isParent ? 'nested-nav' : null}
 
-              ><Link to={item.isParent ? null : item.path} onClick={() => { handelItemClick(itemIndex) }}>{item.name}</Link>
+              ><Link to={item.isParent ? null : item.path} onClick={() => { navMenuHandle(itemIndex) }}>{item.name}</Link>
                 {item.isParent && item.child
                   &&
                   // data-nav='nested-nav' data-nav-display='hidden'
@@ -107,7 +109,7 @@ const Navigation = () => {
           }
         </ul>
 
-        <div className='navigation__mobile-toggle-button'>
+        <div className='navigation__mobile-toggle-button' onClick={navHandle()}>
           <div className='navigation__mobile-toggle-button__bar'>&nbsp;</div>
         </div>
 
