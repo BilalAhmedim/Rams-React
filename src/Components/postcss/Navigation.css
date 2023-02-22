@@ -16,7 +16,6 @@ nav {
   .top-level {
     position: absolute;
     top: 50px;
-    right: 0;
     height: 100vh;
     float: right;
     margin: 0;
@@ -25,15 +24,13 @@ nav {
     font-weight: 500;
     font-size: 16px;
     background: var(--gold);
-    trnsition-delay: 300ms;
     transition: all 300ms ease-in-out;
 
-    &.collapse {
-      top: 50px;
+    &.nav-collapse {
+      right: 0;
     }
-    &.expanded {
-      position: absolute;
-      right: -100%;
+    &.nav-expanded {
+      right: 100%;
     }
   }
 }

@@ -82,11 +82,24 @@ const Navigation = () => {
     const openedNav = 'open';
 
     if (element.classList[1] === closedNav) {
-      element.classList.remove(closedNav);
-      element.classList.add(openedNav);
+      element.classList.toggle(closedNav);
+      element.classList.toggle(openedNav);
     } else {
-      element.classList.remove(openedNav);
-      element.classList.add(closedNav);
+      element.classList.toggle(openedNav);
+      element.classList.toggle(closedNav);
+    }
+    navStatus()
+  }
+
+  const navStatus = () => {
+    const navStatus = document.querySelector('.top-level');
+
+    if (navStatus === 'nav-collapse') {
+      navStatus.classList.toggle('nav-collapse');
+      navStatus.classList.toggle('nav-expanded');
+    } else {
+      navStatus.classList.toggle('nav-collapse');
+      navStatus.classList.toggle('nav-expanded');
     }
   }
 
@@ -98,7 +111,7 @@ const Navigation = () => {
           <Link to='/'><img src={logo} alt='Rams International Logo' className='navigation__brand-logo__img' /></Link>
         </div>
         <div className='nav-model active' onClick={navHandle}></div>
-        <ul className='top-level'>
+        <ul className='top-level nav-collapse'>
           {
             ITEMS.map((item, itemIndex) => (
               <li key={itemIndex}
