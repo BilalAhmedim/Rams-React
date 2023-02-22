@@ -69,8 +69,6 @@ const Navigation = () => {
   const [expandedItem, setExpandedItem] = useState(null);
 
   const navMenuHandle = (itemIndex) => {
-    console.log(itemIndex)
-    console.log(expandedItem)
     if (expandedItem === itemIndex) {
       setExpandedItem(null)
     } else {
@@ -79,7 +77,19 @@ const Navigation = () => {
   }
 
   const navHandle = () => {
+    const element = document.querySelector('div.navigation__mobile-toggle-button')
+    const closedNav = 'close';
+    const openedNav = 'open';
+
+    if (element.classList[1] === closedNav) {
+      element.classList.remove(closedNav);
+      element.classList.add(openedNav);
+    } else {
+      element.classList.remove(openedNav);
+      element.classList.add(closedNav);
+    }
   }
+
   return (
     <header>
 
@@ -87,7 +97,7 @@ const Navigation = () => {
         <div className='navigation__brand-logo'>
           <Link to='/'><img src={logo} alt='Rams International Logo' className='navigation__brand-logo__img' /></Link>
         </div>
-        <div className='nav-model active'></div>
+        <div className='nav-model active' onClick={navHandle}></div>
         <ul className='top-level'>
           {
             ITEMS.map((item, itemIndex) => (
@@ -109,7 +119,7 @@ const Navigation = () => {
           }
         </ul>
 
-        <div className='navigation__mobile-toggle-button' onClick={navHandle()}>
+        <div className='navigation__mobile-toggle-button open' onClick={navHandle}>
           <div className='navigation__mobile-toggle-button__bar'>&nbsp;</div>
         </div>
 
