@@ -132,7 +132,7 @@ const Navigation = () => {
           }
         </ul>
 
-        <div className='navigation__mobile-toggle-button open' onClick={navHandle}>
+        <div className='navigation__mobile-toggle-button close' onClick={navHandle}>
           <div className='navigation__mobile-toggle-button__bar'>&nbsp;</div>
         </div>
 
