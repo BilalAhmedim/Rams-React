@@ -77,7 +77,7 @@ const Navigation = () => {
   }
 
   const navHandle = () => {
-    const element = document.querySelector('div.navigation__mobile-toggle-button')
+    const element = document.querySelector('div.navigation__mobile-toggle-button');
     const closedNav = 'close';
     const openedNav = 'open';
 
@@ -93,6 +93,7 @@ const Navigation = () => {
 
   const navStatus = () => {
     const navStatus = document.querySelector('.top-level');
+    const model = document.querySelector('.nav-model');
 
     if (navStatus === 'nav-collapse') {
       navStatus.classList.toggle('nav-collapse');
@@ -101,6 +102,7 @@ const Navigation = () => {
       navStatus.classList.toggle('nav-collapse');
       navStatus.classList.toggle('nav-expanded');
     }
+    model.classList.toggle('active');
   }
 
   return (
@@ -110,7 +112,7 @@ const Navigation = () => {
         <div className='navigation__brand-logo'>
           <Link to='/'><img src={logo} alt='Rams International Logo' className='navigation__brand-logo__img' /></Link>
         </div>
-        <div className='nav-model active' onClick={navHandle}></div>
+        <div className='nav-model' onClick={navHandle}></div>
         <ul className='top-level nav-collapse'>
           {
             ITEMS.map((item, itemIndex) => (
