@@ -43,11 +43,12 @@
   --lighter-black: #525252;
   --light-black: #313131;
   --black: #000000;
-  --gradient: linear-gradient(
+  /* --gradient: linear-gradient(
     270deg,
     rgba(3, 3, 3, 0.026) 30.73%,
     rgba(215, 179, 86, 0.2) 100%
-  );
+  ); */
+  --gradient: url("./../assets/grad.svg");
 }
 
 * {
