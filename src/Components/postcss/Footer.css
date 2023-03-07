@@ -1,0 +1,31 @@
+.footer {
+  display: block;
+  background: var(--gold);
+  padding: 20px;
+  ul {
+    padding: 0 0 30px 0;
+    margin: 0;
+    li {
+      &:first-child {
+        list-style-type: none;
+        margin: 0;
+      }
+      list-style-type: disc;
+      margin-left: 30px;
+      a {
+        display: inline-block;
+        font-size: 18px;
+        color: var(--light-blck);
+        padding: 8px 0;
+      }
+      .cta__col {
+        width: 200px;
+        height: !important 200px;
+      }
+    }
+    h2 {
+      margin: 20px 0;
+      color: var(--light-black);
+    }
+  }
+}
