@@ -3,8 +3,25 @@
   background: var(--gold);
   padding: 20px;
   ul {
-    padding: 0 0 30px 0;
-    margin: 0;
+    display: block;
+    padding: 0 0 60px 0;
+    margin: 0 auto;
+    width: 300px;
+    &:nth-child(1) {
+      /* width: 250px; */
+      li:nth-child(2) {
+        list-style-type: none;
+      }
+    }
+    /* &:nth-child(2) {
+      width: 300px;
+    }
+    &:nth-child(3) {
+      width: 250px;
+    }
+    &:nth-child(4) {
+      width: 150px;
+    } */
     li {
       &:first-child {
         list-style-type: none;
@@ -20,7 +37,11 @@
       }
       .cta__col {
         width: 200px;
-        height: !important 200px;
+        height: 200px;
+      }
+      address {
+        font-style: normal;
+        font-size: 18px;
       }
     }
     h2 {

@@ -19,9 +19,11 @@ const Footer = () => {
           <h2>Contact Details</h2>
         </li>
         <li>
-          Sambhal Road, Azad Nagar Near
-          Ayesha Masjid,Moradabad -244001
-          India
+          <address>
+            Sambhal Road, Azad Nagar Near
+            Ayesha Masjid,Moradabad -244001
+            India
+          </address>
         </li>
         <li>
           <Link to='mailto: info@ramsintl.com'> info@ramsintl.com</Link>
