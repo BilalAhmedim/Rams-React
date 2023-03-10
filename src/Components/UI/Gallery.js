@@ -8,15 +8,17 @@ const Gallery = (props) => {
   return (
     <div className='gallery'>
       <Header header={props.header} />
-      <Card title='Fire Pit' path='/' image={thumb} />
-      <Card title='Fire Pit' path='/' image={thumb} />
-      <Card title='Fire Pit' path='/' image={thumb} />
-      <Card title='Fire Pit' path='/' image={thumb} />
-      <Card title='Fire Pit' path='/' image={thumb} />
-      <Card title='Fire Pit' path='/' image={thumb} />
-      <Card title='Fire Pit' path='/' image={thumb} />
-      <Card title='Fire Pit' path='/' image={thumb} />
-      <Card title='Fire Pit' path='/' image={thumb} />
+      <div className='wrapper'>
+        <Card title='Fire Pit' path='/' image={thumb} />
+        <Card title='Fire Pit' path='/' image={thumb} />
+        <Card title='Fire Pit' path='/' image={thumb} />
+        <Card title='Fire Pit' path='/' image={thumb} />
+        <Card title='Fire Pit' path='/' image={thumb} />
+        <Card title='Fire Pit' path='/' image={thumb} />
+        <Card title='Fire Pit' path='/' image={thumb} />
+        <Card title='Fire Pit' path='/' image={thumb} />
+        <Card title='Fire Pit' path='/' image={thumb} />
+      </div>
     </div>
   )
 }

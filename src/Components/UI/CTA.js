@@ -8,7 +8,7 @@ const CTA = () => {
   return (
     <div className='cta'>
       <Header header='Contact Us' />
-      <div className='cta__text'>
+      <div className='cta__text wrapper'>
 
         <address className='cta__col'>
           <span>
