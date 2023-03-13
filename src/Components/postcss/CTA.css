@@ -3,7 +3,8 @@
   &__col {
     font-style: normal;
     &:nth-child(2) {
-      margin: 0 50px;
+      margin: 0 50px 50px 50px;
+      height: 478px;
     }
     h2 {
       font-family: "IsidoraSans";
