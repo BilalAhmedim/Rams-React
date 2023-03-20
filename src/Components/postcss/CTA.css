@@ -4,6 +4,7 @@
     font-style: normal;
     &:nth-child(2) {
       margin: 0 50px 50px 50px;
+      width: 50%;
       height: 478px;
     }
     h2 {
