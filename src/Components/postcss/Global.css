@@ -87,4 +87,22 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
+  &--fixed {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+}
+
+section {
+  padding-bottom: 30px;
+  h1 {
+    border-bottom: 1px solid var(--gold);
+    padding-left: 30px;
+    color: var(--light-black);
+  }
+  p {
+    padding: 0px 30px;
+    line-height: 1.5;
+    color: var(--lighter-black);
+  }
 }
