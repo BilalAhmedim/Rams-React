@@ -106,3 +106,6 @@ section {
     color: var(--lighter-black);
   }
 }
+.navigation {
+  z-index: 10;
+}
