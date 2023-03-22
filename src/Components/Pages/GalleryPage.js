@@ -74,8 +74,8 @@ const GalleryPage = () => {
     <React.Fragment>
       <Navigation />
       <div className="gallery-detailed clearfix">
+        <Header header="Gallery" />
         <div className="wrapper">
-          <Header header="Gallery" />
           {
             DETAILS.map((detail, detailIndex) => (
               <DetailedCard key={detailIndex} data={detail} />
