@@ -9,6 +9,7 @@
   text-align: center;
   max-height: 364px;
   border: 1px solid var(--gold);
+  background: #fff;
   &:after {
     content: "";
     display: table;
