@@ -1,0 +1,37 @@
+.gallery-detailed {
+  margin-bottom: 30px;
+  &__card {
+    text-decoration: none;
+    margin: 15px;
+    &__img {
+      display: block;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+    }
+    h3 {
+      font-family: IsidoraSans;
+      display: inline-block;
+      font-size: 20px;
+      font-weight: 600;
+      margin: 10px 0 5px 0;
+      padding: 0 0 0 5px;
+      color: var(--light-black);
+    }
+    h3 + span {
+      float: right;
+      margin: 10px 5px;
+      color: var(--light-black);
+      span {
+        float: none;
+        padding-bottom: 10px;
+      }
+    }
+    p {
+      margin: 0;
+      padding: 1px 0 1px 5px;
+      color: var(--light-black);
+      letter-spacing: 0;
+      font-size: 14px;
+    }
+  }
+}

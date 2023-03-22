@@ -1,2 +1,40 @@
+.gallery-detailed{
+  margin-bottom:30px;
+}
+  .gallery-detailed__card{
+    -webkit-text-decoration:none;
+    text-decoration:none;
+    margin:15px;
+  }
+  .gallery-detailed__card__img{
+      display:block;
+      width:100%;
+      aspect-ratio:1 / 1;
+    }
+  .gallery-detailed__card h3{
+      font-family:IsidoraSans;
+      display:inline-block;
+      font-size:20px;
+      font-weight:600;
+      margin:10px 0 5px 0;
+      padding:0 0 0 5px;
+      color:var(--light-black);
+    }
+  .gallery-detailed__card h3 + span{
+      float:right;
+      margin:10px 5px;
+      color:var(--light-black);
+    }
+  .gallery-detailed__card h3 + span span{
+        float:none;
+        padding-bottom:10px;
+      }
+  .gallery-detailed__card p{
+      margin:0;
+      padding:1px 0 1px 5px;
+      color:var(--light-black);
+      letter-spacing:0;
+      font-size:14px;
+    }
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJEZXRhaWxlZENhcmQuY3NzIn0= */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Bvc3Rjc3MvRGV0YWlsZWRDYXJkLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGtCQUFtQjtBQW1DckI7RUFsQ0U7SUFDRSw0QkFBcUI7SUFBckIsb0JBQXFCO0lBQ3JCLFdBQVk7RUErQmQ7RUE5QkU7TUFDRSxhQUFjO01BQ2QsVUFBVztNQUNYLGtCQUFtQjtJQUNyQjtFQUNBO01BQ0UsdUJBQXdCO01BQ3hCLG9CQUFxQjtNQUNyQixjQUFlO01BQ2YsZUFBZ0I7TUFDaEIsbUJBQW9CO01BQ3BCLGlCQUFrQjtNQUNsQix3QkFBeUI7SUFDM0I7RUFDQTtNQUNFLFdBQVk7TUFDWixlQUFnQjtNQUNoQix3QkFBeUI7SUFLM0I7RUFKRTtRQUNFLFVBQVc7UUFDWCxtQkFBb0I7TUFDdEI7RUFFRjtNQUNFLFFBQVM7TUFDVCxxQkFBc0I7TUFDdEIsd0JBQXlCO01BQ3pCLGdCQUFpQjtNQUNqQixjQUFlO0lBQ2pCIiwiZmlsZSI6IkRldGFpbGVkQ2FyZC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIuZ2FsbGVyeS1kZXRhaWxlZCB7XG4gIG1hcmdpbi1ib3R0b206IDMwcHg7XG4gICZfX2NhcmQge1xuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICBtYXJnaW46IDE1cHg7XG4gICAgJl9faW1nIHtcbiAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgd2lkdGg6IDEwMCU7XG4gICAgICBhc3BlY3QtcmF0aW86IDEgLyAxO1xuICAgIH1cbiAgICBoMyB7XG4gICAgICBmb250LWZhbWlseTogSXNpZG9yYVNhbnM7XG4gICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgICBmb250LXNpemU6IDIwcHg7XG4gICAgICBmb250LXdlaWdodDogNjAwO1xuICAgICAgbWFyZ2luOiAxMHB4IDAgNXB4IDA7XG4gICAgICBwYWRkaW5nOiAwIDAgMCA1cHg7XG4gICAgICBjb2xvcjogdmFyKC0tbGlnaHQtYmxhY2spO1xuICAgIH1cbiAgICBoMyArIHNwYW4ge1xuICAgICAgZmxvYXQ6IHJpZ2h0O1xuICAgICAgbWFyZ2luOiAxMHB4IDVweDtcbiAgICAgIGNvbG9yOiB2YXIoLS1saWdodC1ibGFjayk7XG4gICAgICBzcGFuIHtcbiAgICAgICAgZmxvYXQ6IG5vbmU7XG4gICAgICAgIHBhZGRpbmctYm90dG9tOiAxMHB4O1xuICAgICAgfVxuICAgIH1cbiAgICBwIHtcbiAgICAgIG1hcmdpbjogMDtcbiAgICAgIHBhZGRpbmc6IDFweCAwIDFweCA1cHg7XG4gICAgICBjb2xvcjogdmFyKC0tbGlnaHQtYmxhY2spO1xuICAgICAgbGV0dGVyLXNwYWNpbmc6IDA7XG4gICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgfVxuICB9XG59XG4iXX0= */

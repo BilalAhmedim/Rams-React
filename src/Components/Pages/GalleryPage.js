@@ -11,6 +11,7 @@ const DETAILS = [
     title: 'Copper Product 1',
     image: thumb,
     material: ingot,
+    metal: 'Copper',
     finish: 'Antique',
     size: 'L66 X W22 X H31',
     tags: 'bathtub, double slipper, antique',
@@ -20,6 +21,7 @@ const DETAILS = [
     title: 'Copper Product 1',
     image: thumb,
     material: ingot,
+    metal: 'Copper',
     finish: 'Antique',
     size: 'L66 X W22 X H31',
     tags: 'bathtub, double slipper, antique',
@@ -29,6 +31,7 @@ const DETAILS = [
     title: 'Copper Product 1',
     image: thumb,
     material: ingot,
+    metal: 'Copper',
     finish: 'Antique',
     size: 'L66 X W22 X H31',
     tags: 'bathtub, double slipper, antique',
@@ -38,6 +41,7 @@ const DETAILS = [
     title: 'Copper Product 1',
     image: thumb,
     material: ingot,
+    metal: 'Copper',
     finish: 'Antique',
     size: 'L66 X W22 X H31',
     tags: 'bathtub, double slipper, antique',
@@ -47,6 +51,7 @@ const DETAILS = [
     title: 'Copper Product 1',
     image: thumb,
     material: ingot,
+    metal: 'Copper',
     finish: 'Antique',
     size: 'L66 X W22 X H31',
     tags: 'bathtub, double slipper, antique',
@@ -56,6 +61,7 @@ const DETAILS = [
     title: 'Copper Product 1',
     image: thumb,
     material: ingot,
+    metal: 'Copper',
     finish: 'Antique',
     size: 'L66 X W22 X H31',
     tags: 'bathtub, double slipper, antique',
@@ -67,13 +73,15 @@ const GalleryPage = () => {
   return (
     <React.Fragment>
       <Navigation />
-      <Header header="Gallery" />
-      <div className="gallery">
-        {
-          DETAILS.map((detail, detailIndex) => (
-            <DetailedCard key={detailIndex} data={detail} />
-          ))
-        }
+      <div className="gallery-detailed clearfix">
+        <div className="wrapper">
+          <Header header="Gallery" />
+          {
+            DETAILS.map((detail, detailIndex) => (
+              <DetailedCard key={detailIndex} data={detail} />
+            ))
+          }
+        </div>
       </div>
       <Footer />
     </React.Fragment>
