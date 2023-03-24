@@ -1,0 +1,14 @@
+.about {
+  /* margin-bottom: 30px; */
+  text-align: center;
+  &-link {
+    display: block;
+    padding: 13px 18px 12px 18px;
+    background: var(--gold);
+    text-decoration: none;
+    color: var(--light-black);
+    font-weight: 600;
+    margin: 10px 0 53px 0;
+    border-radius: 5px;
+  }
+}
