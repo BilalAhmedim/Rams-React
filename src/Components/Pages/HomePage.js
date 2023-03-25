@@ -4,6 +4,7 @@ import Gallery from './../UI/Gallery'
 import CTA from './../UI/CTA'
 import Footer from './../UI/Footer';
 import Header from '../UI/Header';
+import { Link } from 'react-router-dom';
 import './../UI/Page.css'
 
 const HomePage = () => {
@@ -19,7 +20,7 @@ const HomePage = () => {
           <p>
             We are leading Manufacturers exporters of Copper bathtubs, Wash Basins & Kitchen Sinks (Copper & Stainless steel) we also makes items for home décor. Rams International, established in 2003, it has been only over the last 16 years, we have experienced the tremendous change that has brought us to where we are today.
           </p>
-          <a href="/about-us" className='about-link'>Read More.</a>
+          <Link to="/about-us" className='about-link'>Read More.</Link>
         </div>
       </div>
       <Gallery header='Gallery' />

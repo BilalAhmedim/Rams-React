@@ -87,13 +87,13 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   flex-direction: row;
-  p {
-    padding: 0 28px;
-  }
   &--fixed {
     max-width: 1440px;
     margin: 0 auto;
   }
+}
+.text-center {
+  text-align: center;
 }
 
 section {
@@ -107,6 +107,7 @@ section {
     padding: 0px 30px;
     line-height: 1.5;
     color: var(--lighter-black);
+    text-align: left;
   }
 }
 .navigation {

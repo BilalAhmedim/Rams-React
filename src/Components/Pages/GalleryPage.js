@@ -15,7 +15,7 @@ const DETAILS = [
     finish: 'Antique',
     size: 'L66 X W22 X H31',
     tags: 'bathtub, double slipper, antique',
-    path: '#'
+    path: '/category/product'
   },
   {
     title: 'Copper Product 1',
@@ -25,7 +25,7 @@ const DETAILS = [
     finish: 'Antique',
     size: 'L66 X W22 X H31',
     tags: 'bathtub, double slipper, antique',
-    path: '#'
+    path: '/category/product'
   },
   {
     title: 'Copper Product 1',
@@ -35,7 +35,7 @@ const DETAILS = [
     finish: 'Antique',
     size: 'L66 X W22 X H31',
     tags: 'bathtub, double slipper, antique',
-    path: '#'
+    path: '/category/product'
   },
   {
     title: 'Copper Product 1',
@@ -45,7 +45,7 @@ const DETAILS = [
     finish: 'Antique',
     size: 'L66 X W22 X H31',
     tags: 'bathtub, double slipper, antique',
-    path: '#'
+    path: '/category/product'
   },
   {
     title: 'Copper Product 1',
@@ -55,7 +55,7 @@ const DETAILS = [
     finish: 'Antique',
     size: 'L66 X W22 X H31',
     tags: 'bathtub, double slipper, antique',
-    path: '#'
+    path: '/category/product'
   },
   {
     title: 'Copper Product 1',
@@ -65,7 +65,7 @@ const DETAILS = [
     finish: 'Antique',
     size: 'L66 X W22 X H31',
     tags: 'bathtub, double slipper, antique',
-    path: '#'
+    path: '/category/product'
   },
 ]
 
