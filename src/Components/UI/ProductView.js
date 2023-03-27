@@ -24,20 +24,20 @@ const ProductView = () => {
   return (
     <React.Fragment>
       <div className='product-view'>
-        <div className='wrapper-fixed'>
+        <div className='wrapper--fixed'>
           <div className='product-view__container'>
 
             <div className='product-view__light-box'>
 
               <img src={image_iso} alt="Product Large" />
 
-              <div className='arrow'>
+              <div className='arrow clearfix'>
                 <div className='arrow__right'>&nbsp;</div>
                 <div className='arrow__left'>&nbsp;</div>
               </div>
 
               <ul>
-                <li><img src={image_iso} alt='First View' /></li>
+                <li className='active'><img src={image_iso} alt='First View' /></li>
                 <li><img src={image_front} alt='Second View' /></li>
                 <li><img src={image_top} alt='Third View' /></li>
                 <li><img src={image_front} alt='Fourth View' /></li>
@@ -54,7 +54,7 @@ const ProductView = () => {
                 <li>size: {product.size}</li>
                 <li>finish available: {product.avail_finish}</li>
                 <li>tags: {product.tags}</li>
-                <li>crtifications: {product.certification}</li>
+                <li>certifications: {product.certification}</li>
                 <li>material options: {product.material_options}</li>
               </ul>
             </div>
