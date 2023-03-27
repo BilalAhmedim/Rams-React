@@ -1,2 +1,63 @@
+.product-view{
+  background:red;
+}
 
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJQcm9kdWN0Vmlldy5jc3MifQ== */
+  .product-view__container{
+    display:flex;
+  }
+
+  .product-view__light-box{
+    width:50%;
+    height:auto;
+    position:relative;
+  }
+
+  .product-view__light-box img{
+      width:100%;
+    }
+
+  .product-view__light-box .arrow__right{
+        position:absolute;
+        right:0;
+        top:50px;
+        width:50px;
+        height:50px;
+        background:var(--white);
+        opacity:0.5;
+      }
+
+  .product-view__light-box .arrow__right:after{
+          content:"";
+          display:inline-block;
+          width:30px;
+          height:30px;
+          margin:8px 0 0 5px;
+          border:2px solid var(--light-black);
+          transform:translate(-25%, 0) rotate(45deg);
+          border-bottom:0;
+          border-left:0;
+        }
+
+  .product-view__light-box .arrow__left{
+        position:absolute;
+        left:0;
+        top:50px;
+        width:50px;
+        height:50px;
+        background:var(--white);
+        opacity:0.5;
+      }
+
+  .product-view__light-box .arrow__left:after{
+          content:"";
+          display:inline-block;
+          width:30px;
+          height:30px;
+          margin:8px 0 0 5px;
+          border:2px solid var(--light-black);
+          transform:rotate(45deg);
+          border-top:0;
+          border-right:0;
+        }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Bvc3Rjc3MvUHJvZHVjdFZpZXcuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsY0FBZTtBQXVEakI7O0VBckRFO0lBQ0UsWUFBYTtFQUNmOztFQUNBO0lBQ0UsU0FBVTtJQUNWLFdBQVk7SUFDWixpQkFBa0I7RUE4Q3BCOztFQTdDRTtNQUNFLFVBQVc7SUFDYjs7RUFFRTtRQUNFLGlCQUFrQjtRQUNsQixPQUFRO1FBQ1IsUUFBUztRQUNULFVBQVc7UUFDWCxXQUFZO1FBQ1osdUJBQXdCO1FBQ3hCLFdBQVk7TUFZZDs7RUFYRTtVQUNFLFVBQVc7VUFDWCxvQkFBcUI7VUFDckIsVUFBVztVQUNYLFdBQVk7VUFDWixrQkFBbUI7VUFDbkIsbUNBQW9DO1VBQ3BDLDBDQUEyQztVQUMzQyxlQUFnQjtVQUNoQixhQUFjO1FBQ2hCOztFQUVGO1FBQ0UsaUJBQWtCO1FBQ2xCLE1BQU87UUFDUCxRQUFTO1FBQ1QsVUFBVztRQUNYLFdBQVk7UUFDWix1QkFBd0I7UUFDeEIsV0FBWTtNQVlkOztFQVhFO1VBQ0UsVUFBVztVQUNYLG9CQUFxQjtVQUNyQixVQUFXO1VBQ1gsV0FBWTtVQUNaLGtCQUFtQjtVQUNuQixtQ0FBb0M7VUFDcEMsdUJBQXdCO1VBQ3hCLFlBQWE7VUFDYixjQUFlO1FBQ2pCIiwiZmlsZSI6IlByb2R1Y3RWaWV3LmNzcyIsInNvdXJjZXNDb250ZW50IjpbIi5wcm9kdWN0LXZpZXcge1xuICBiYWNrZ3JvdW5kOiByZWQ7XG5cbiAgJl9fY29udGFpbmVyIHtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICB9XG4gICZfX2xpZ2h0LWJveCB7XG4gICAgd2lkdGg6IDUwJTtcbiAgICBoZWlnaHQ6IGF1dG87XG4gICAgcG9zaXRpb246IHJlbGF0aXZlO1xuICAgIGltZyB7XG4gICAgICB3aWR0aDogMTAwJTtcbiAgICB9XG4gICAgLmFycm93IHtcbiAgICAgICZfX3JpZ2h0IHtcbiAgICAgICAgcG9zaXRpb246IGFic29sdXRlO1xuICAgICAgICByaWdodDogMDtcbiAgICAgICAgdG9wOiA1MHB4O1xuICAgICAgICB3aWR0aDogNTBweDtcbiAgICAgICAgaGVpZ2h0OiA1MHB4O1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS13aGl0ZSk7XG4gICAgICAgIG9wYWNpdHk6IDAuNTtcbiAgICAgICAgJjphZnRlciB7XG4gICAgICAgICAgY29udGVudDogXCJcIjtcbiAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgICAgICAgd2lkdGg6IDMwcHg7XG4gICAgICAgICAgaGVpZ2h0OiAzMHB4O1xuICAgICAgICAgIG1hcmdpbjogOHB4IDAgMCA1cHg7XG4gICAgICAgICAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tbGlnaHQtYmxhY2spO1xuICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlKC0yNSUsIDApIHJvdGF0ZSg0NWRlZyk7XG4gICAgICAgICAgYm9yZGVyLWJvdHRvbTogMDtcbiAgICAgICAgICBib3JkZXItbGVmdDogMDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgICAgJl9fbGVmdCB7XG4gICAgICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICAgICAgbGVmdDogMDtcbiAgICAgICAgdG9wOiA1MHB4O1xuICAgICAgICB3aWR0aDogNTBweDtcbiAgICAgICAgaGVpZ2h0OiA1MHB4O1xuICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS13aGl0ZSk7XG4gICAgICAgIG9wYWNpdHk6IDAuNTtcbiAgICAgICAgJjphZnRlciB7XG4gICAgICAgICAgY29udGVudDogXCJcIjtcbiAgICAgICAgICBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7XG4gICAgICAgICAgd2lkdGg6IDMwcHg7XG4gICAgICAgICAgaGVpZ2h0OiAzMHB4O1xuICAgICAgICAgIG1hcmdpbjogOHB4IDAgMCA1cHg7XG4gICAgICAgICAgYm9yZGVyOiAycHggc29saWQgdmFyKC0tbGlnaHQtYmxhY2spO1xuICAgICAgICAgIHRyYW5zZm9ybTogcm90YXRlKDQ1ZGVnKTtcbiAgICAgICAgICBib3JkZXItdG9wOiAwO1xuICAgICAgICAgIGJvcmRlci1yaWdodDogMDtcbiAgICAgICAgfVxuICAgICAgfVxuICAgIH1cbiAgfVxufVxuIl19 */
