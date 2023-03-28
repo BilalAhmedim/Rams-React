@@ -3,6 +3,7 @@ import './ProductView.css'
 import image_iso from './../assets/1_iso.JPG';
 import image_front from './../assets/1_front.JPG';
 import image_top from './../assets/1_top.JPG';
+import { Link } from 'react-router-dom';
 
 
 const ProductView = () => {
@@ -25,7 +26,14 @@ const ProductView = () => {
     <React.Fragment>
       <div className='product-view'>
         <div className='wrapper--fixed'>
+          <div className='breadcrumbs'>
+            <Link to='#'>Home</Link> /
+            <Link to='#'> product category</Link> /
+            <Link to='#'> product list</Link> /
+            <Link to='#'> product</Link>
+          </div>
           <div className='product-view__container'>
+
 
             <div className='product-view__light-box'>
 
