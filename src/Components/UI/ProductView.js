@@ -29,11 +29,12 @@ const ProductView = () => {
 
             <div className='product-view__light-box'>
 
-              <img src={image_iso} alt="Product Large" />
+              <div className='product-view__light-box--view'>
 
-              <div className='arrow clearfix'>
+                <img src={image_iso} alt="Product Large" />
                 <div className='arrow__right'>&nbsp;</div>
                 <div className='arrow__left'>&nbsp;</div>
+
               </div>
 
               <ul>

@@ -3,11 +3,13 @@
 
   &__container {
     display: flex;
+    padding: 50px 0;
   }
   &__light-box {
     width: 50%;
-    position: relative;
-    margin-top: 50px;
+    &--view {
+      position: relative;
+    }
     img {
       width: 100%;
     }
@@ -15,7 +17,7 @@
       &__right {
         position: absolute;
         right: 0;
-        top: calc(50% - 150px);
+        top: calc(50% - 25px);
         width: 50px;
         height: 50px;
         background: var(--white);
@@ -36,7 +38,7 @@
       &__left {
         position: absolute;
         left: 0;
-        top: 50px;
+        top: calc(50% - 25px);
         width: 50px;
         height: 50px;
         background: var(--white);
