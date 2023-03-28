@@ -49,8 +49,8 @@ const ProductView = () => {
             <div className='product-view__info'>
               <ul>
                 <li>Product Name: {product.name}</li>
-                <li>Product Item: {product.item_num}</li>
-                <li>finsh: {product.finish}</li>
+                <li>Item no: {product.item_num}</li>
+                <li>finish: {product.finish}</li>
                 <li>material: {product.material}</li>
                 <li>size: {product.size}</li>
                 <li>finish available: {product.avail_finish}</li>

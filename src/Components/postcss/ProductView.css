@@ -1,9 +1,7 @@
 .product-view {
-  background: red;
-
   &__container {
     display: flex;
-    padding: 50px 0;
+    padding: 50px 15px;
   }
   &__light-box {
     width: 50%;
@@ -12,6 +10,8 @@
     }
     img {
       width: 100%;
+      aspect-ratio: 1 / 1;
+      border: 1px solid var(--gold);
     }
     .arrow {
       &__right {
@@ -73,6 +73,22 @@
         &.active {
           opacity: 0.5;
         }
+      }
+    }
+  }
+
+  &__info {
+    font-size: 20px;
+    padding-left: 60px;
+    ul {
+      margin: 0;
+      padding: 0;
+      li {
+        display: block;
+        padding: 20px 0;
+        font-weight: 400;
+        border-bottom: 1px solid var(--gold);
+        text-transform: uppercase;
       }
     }
   }
