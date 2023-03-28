@@ -3,6 +3,7 @@
   width: 100%;
   height: 100%;
   background: var(--gradient);
+  border-bottom: 2px solid var(--gold);
   h1 {
     opacity: 1;
     font-size: 24px;
