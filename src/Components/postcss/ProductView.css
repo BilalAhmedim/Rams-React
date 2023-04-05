@@ -57,6 +57,7 @@
         height: 50px;
         background: var(--white);
         opacity: 0.5;
+        cursor: pointer;
         &:after {
           content: "";
           display: inline-block;
@@ -84,7 +85,7 @@
         cursor: pointer;
         margin: 10px;
         padding: 0;
-        &.active {
+        .active {
           opacity: 0.5;
         }
       }

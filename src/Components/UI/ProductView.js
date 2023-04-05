@@ -21,6 +21,16 @@ const ProductView = () => {
     material_options: 'Brass, Copper, Steel'
   }
 
+  const onNextSlide = () => {
+
+    currentSlide();
+
+  }
+  const currentSlide = () => {
+    const currentSlide = document.querySelector('.active');
+    return currentSlide.getAttribute('data-slide')
+  }
+
 
   return (
     <React.Fragment>
@@ -39,17 +49,17 @@ const ProductView = () => {
 
               <div className='product-view__light-box--view'>
 
-                <img src={image_iso} alt="Product Large" />
-                <div className='arrow__right'>&nbsp;</div>
+                <img src={image_iso} alt="Product Large" data-current-slide='1' />
+                <div className='arrow__right' onClick={onNextSlide}>&nbsp;</div>
                 <div className='arrow__left'>&nbsp;</div>
 
               </div>
 
               <ul>
-                <li className='active'><img src={image_iso} alt='First View' /></li>
-                <li><img src={image_front} alt='Second View' /></li>
-                <li><img src={image_top} alt='Third View' /></li>
-                <li><img src={image_front} alt='Fourth View' /></li>
+                <li><img className='active' src={image_iso} alt='First View' data-src={image_iso} data-slide='1' /></li>
+                <li><img src={image_front} alt='Second View' data-src={image_front} data-slide='2' /></li>
+                <li><img src={image_top} alt='Third View' data-src={image_top} data-slide='3' /></li>
+                <li><img src={image_front} alt='Fourth View' data-src={image_front} data-slide='4' /></li>
               </ul>
 
             </div>
