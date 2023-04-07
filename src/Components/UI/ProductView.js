@@ -31,6 +31,16 @@ const ProductView = () => {
   function onThumbnailClick(index) {
     setCurrentSlide(index);
   }
+  const productZoomer = e => {
+    let width = product.images[currentSlide].offsetWidth;
+    let height = product.images[currentSlide].offsetHeight;
+    let mousex = e.offsetX;
+    let mousey = e.offsetY;
+
+    let bgPosX = (mousex / width * 100);
+    let bgPosY = (mousey / height * 100);
+    e.target.style.backgroundPosition = `${bgPosX}%  ${bgPosY}%`;
+  }
 
 
   return (
@@ -50,7 +60,7 @@ const ProductView = () => {
 
               <div className='product-view__light-box--view'>
 
-                <img src={product.images[currentSlide]} alt="Product Large" data-current-slide={currentSlide + 1} />
+                <img onMouseMove={productZoomer} className='zoomable' src={product.images[currentSlide]} alt="Product Large" data-current-slide={currentSlide + 1} />
                 <div className='arrow__right' onClick={onNextSlide}>&nbsp;</div>
                 <div className='arrow__left'>&nbsp;</div>
 
