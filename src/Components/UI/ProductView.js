@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './ProductView.css'
 import image_iso from './../assets/1_iso.JPG';
 import image_front from './../assets/1_front.JPG';
@@ -18,17 +18,18 @@ const ProductView = () => {
     avail_finish: 'Antique, Mate, Polish, Others',
     tags: ' Brass, Double Slipper, bath tub',
     certification: 'UPC',
-    material_options: 'Brass, Copper, Steel'
+    material_options: 'Brass, Copper, Steel',
+    images: [image_iso, image_front, image_top]
   }
 
-  const onNextSlide = () => {
+  const [currentSlide, setCurrentSlide] = useState(0);
 
-    currentSlide();
-
+  function onNextSlide() {
+    setCurrentSlide((currentSlide + 1) % product.images.length);
   }
-  const currentSlide = () => {
-    const currentSlide = document.querySelector('.active');
-    return currentSlide.getAttribute('data-slide')
+
+  function onThumbnailClick(index) {
+    setCurrentSlide(index);
   }
 
 
@@ -49,17 +50,25 @@ const ProductView = () => {
 
               <div className='product-view__light-box--view'>
 
-                <img src={image_iso} alt="Product Large" data-current-slide='1' />
+                <img src={product.images[currentSlide]} alt="Product Large" data-current-slide={currentSlide + 1} />
                 <div className='arrow__right' onClick={onNextSlide}>&nbsp;</div>
                 <div className='arrow__left'>&nbsp;</div>
 
               </div>
 
-              <ul>
-                <li><img className='active' src={image_iso} alt='First View' data-src={image_iso} data-slide='1' /></li>
-                <li><img src={image_front} alt='Second View' data-src={image_front} data-slide='2' /></li>
-                <li><img src={image_top} alt='Third View' data-src={image_top} data-slide='3' /></li>
-                <li><img src={image_front} alt='Fourth View' data-src={image_front} data-slide='4' /></li>
+              <ul className='product-view__thumbnails'>
+                {product.images.map((image, index) => (
+                  <li key={index}>
+                    <img
+                      className={currentSlide === index ? 'active' : ''}
+                      src={image}
+                      alt={`View ${index + 1}`}
+                      data-src={image}
+                      data-slide={index + 1}
+                      onClick={() => onThumbnailClick(index)}
+                    />
+                  </li>
+                ))}
               </ul>
 
             </div>
