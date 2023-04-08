@@ -5,12 +5,15 @@ import CTA from './../UI/CTA'
 import Footer from './../UI/Footer';
 import Header from '../UI/Header';
 import { Link } from 'react-router-dom';
+import Hero from './../UI/Hero'
+import image from './../assets/1.png'
 import './../UI/Page.css'
 
 const HomePage = () => {
   return (
     <React.Fragment>
       <Navigation />
+      <Hero src={image} alt='Hero Section' />
       <div className='about'>
         <Header header="About US" />
         <div className='wrapper'>
