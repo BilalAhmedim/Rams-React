@@ -1,0 +1,19 @@
+/* mixins */
+
+@define-mixin atmob {
+  @media (min-width: 768px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin attab {
+  @media (min-width: 992px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atdesk {
+  @media (min-width: 1170px) {
+    @mixin-content;
+  }
+}
