@@ -56,6 +56,26 @@
   font-family: "IsidoraSans", cursive;
 }
 
+/* mixins */
+
+@define-mixin atmob {
+  @media (min-width: 768px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin attab {
+  @media (min-width: 992px) {
+    @mixin-content;
+  }
+}
+
+@define-mixin atdesk {
+  @media (min-width: 1170px) {
+    @mixin-content;
+  }
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -70,8 +90,8 @@ body {
 h1,
 h2,
 h3,
-h,
-h,
+h4,
+h5,
 h6 {
   font-family: "EduQLDBeginner";
 }
@@ -79,6 +99,10 @@ h6 {
 p {
   font-size: 20px;
   font-weight: 500;
+  padding: 0 22px;
+  @mixin atdesk {
+    padding: 0;
+  }
 }
 .wrapper {
   max-width: 1440px;
